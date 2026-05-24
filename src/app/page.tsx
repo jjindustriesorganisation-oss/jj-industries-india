@@ -1,35 +1,9 @@
+import Header from "@/app/components/Header";
+
 export default function Home() {
   return (
     <>
-      <header className="bg-surface-light dark:bg-surface-dark shadow-md sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center py-4">
-            <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-primary text-white flex items-center justify-center font-display font-bold text-2xl rounded">
-                JJ
-              </div>
-              <div>
-                <h1 className="font-display font-bold text-xl text-primary-dark dark:text-primary tracking-wide">INDUSTRIES</h1>
-              </div>
-            </div>
-            <nav className="hidden md:flex space-x-8">
-              <a className="text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary font-medium transition" href="#">Home</a>
-              <a className="text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary font-medium transition" href="/products">Products</a>
-              <a className="text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary font-medium transition" href="/about">About</a>
-              <a className="text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary font-medium transition" href="#industries">Industries</a>
-              <a className="text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary font-medium transition" href="#contact">Contact</a>
-            </nav>
-            <div className="hidden md:block">
-              <a className="bg-primary text-white px-5 py-2 rounded font-medium hover:bg-opacity-90 transition shadow-md" href="#contact">Get a Quote</a>
-            </div>
-            <div className="md:hidden flex items-center">
-              <button className="text-text-light dark:text-text-dark hover:text-primary focus:outline-none">
-                <span className="material-icons">menu</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </header>
+      <Header />
 
       <section className="marble-bg min-h-[819px] flex items-center">
         <div className="marble-overlay"></div>

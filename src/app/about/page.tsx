@@ -1,50 +1,10 @@
+import Header from "@/app/components/Header";
 import Link from "next/link";
 
 export default function AboutPage() {
   return (
     <>
-      {/* Header */}
-      <header className="bg-surface-light dark:bg-surface-dark shadow-md sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center py-4">
-            <div className="flex items-center space-x-2">
-              <Link href="/" className="flex items-center space-x-2">
-                <div className="w-10 h-10 bg-primary text-white flex items-center justify-center font-display font-bold text-2xl rounded">
-                  JJ
-                </div>
-                <span className="font-display font-bold text-xl text-primary-dark dark:text-primary tracking-wide">INDUSTRIES</span>
-              </Link>
-            </div>
-            <nav className="hidden md:flex space-x-8">
-              <Link href="/" className="text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary font-medium transition">
-                Home
-              </Link>
-              <Link href="/products" className="text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary font-medium transition">
-                Products
-              </Link>
-              <Link href="/about" className="text-primary dark:text-primary font-semibold border-b-2 border-primary pb-1 transition">
-                About
-              </Link>
-              <Link href="/#industries" className="text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary font-medium transition">
-                Industries
-              </Link>
-              <Link href="/#contact" className="text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary font-medium transition">
-                Contact
-              </Link>
-            </nav>
-            <div className="hidden md:block">
-              <Link href="/#contact" className="bg-primary text-white px-5 py-2 rounded font-medium hover:bg-opacity-90 transition shadow-md">
-                Get a Quote
-              </Link>
-            </div>
-            <div className="md:hidden flex items-center">
-              <button className="text-text-light dark:text-text-dark hover:text-primary focus:outline-none">
-                <span className="material-icons">menu</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </header>
+      <Header />
 
       {/* Main Content */}
       <main className="flex-grow">
