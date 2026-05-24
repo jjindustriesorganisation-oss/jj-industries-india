@@ -14,7 +14,7 @@ export default function Home() {
             </div>
             <nav className="hidden md:flex space-x-8">
               <a className="text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary font-medium transition" href="#">Home</a>
-              <a className="text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary font-medium transition" href="#about">About Us</a>
+
               <a className="text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary font-medium transition" href="#products">Products</a>
               <a className="text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary font-medium transition" href="#industries">Industries</a>
               <a className="text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary font-medium transition" href="#contact">Contact</a>
@@ -50,29 +50,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-20 bg-surface-light dark:bg-surface-dark" id="about">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row items-center gap-12">
-            <div className="w-full md:w-1/2 flex justify-center">
-              <div className="relative">
-                <div className="absolute inset-0 border-4 border-primary rounded-full transform scale-105"></div>
-                <img alt="Jigna Baraiya" className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-full shadow-2xl relative z-10 border-4 border-white dark:border-primary-dark" src="/images/founder_jigna.png" />
-              </div>
-            </div>
-            <div className="w-full md:w-1/2 space-y-6 text-center md:text-left">
-              <div className="flex items-center justify-center md:justify-start gap-4">
-                <div className="h-px bg-primary w-12"></div>
-                <h3 className="font-display text-2xl md:text-3xl font-bold text-primary-dark dark:text-white">MEET OUR LEADER</h3>
-                <div className="h-px bg-primary w-12 hidden md:block"></div>
-              </div>
-              <h4 className="text-3xl md:text-4xl font-display font-bold text-primary">JIGNA BARAIYA</h4>
-              <p className="text-lg text-text-light dark:text-text-dark leading-relaxed">
-                Meet Jigna Baraiya (2008 Passout), a dynamic entrepreneur based right here in Bhavnagar, bridging local manufacturing with global opportunities. Under her leadership, JJ Industries has grown to become a trusted name in complete hotel supply solutions.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       <section className="py-20 bg-background-light dark:bg-background-dark" id="products">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -276,10 +254,7 @@ export default function Home() {
                     <span className="material-icons text-primary">email</span>
                     <a className="text-lg hover:text-primary transition" href="mailto:jjbaraiya@gmail.com">jjbaraiya@gmail.com</a>
                   </div>
-                  <div className="flex items-center gap-3">
-                    <span className="material-icons text-primary">language</span>
-                    <a className="text-lg hover:text-primary transition" href="https://www.jjindustriesindia.com" target="_blank" rel="noopener noreferrer">www.jjindustriesindia.com</a>
-                  </div>
+
                   <div className="flex items-center gap-3">
                     <span className="material-icons text-primary">location_on</span>
                     <span className="text-lg">Bhavnagar, Gujarat, India</span>
@@ -306,11 +281,10 @@ export default function Home() {
               <a className="w-8 h-8 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center text-gray-600 dark:text-gray-400 hover:bg-primary hover:text-white dark:hover:bg-primary dark:hover:text-white transition" href="#">
                 <span className="material-icons text-sm">facebook</span>
               </a>
-              <a className="w-8 h-8 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center text-gray-600 dark:text-gray-400 hover:bg-primary hover:text-white dark:hover:bg-primary dark:hover:text-white transition" href="#">
-                <span className="material-icons text-sm">photo_camera</span>
-              </a>
-              <a className="w-8 h-8 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center text-gray-600 dark:text-gray-400 hover:bg-primary hover:text-white dark:hover:bg-primary dark:hover:text-white transition" href="#">
-                <span className="material-icons text-sm">work</span>
+              <a className="w-8 h-8 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center text-gray-600 dark:text-gray-400 hover:bg-primary hover:text-white dark:hover:bg-primary dark:hover:text-white transition" href="https://www.instagram.com/j_j_indus?igsh=aGc5eWdtZHo1MTA=" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+                </svg>
               </a>
             </div>
           </div>
