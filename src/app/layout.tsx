@@ -1,5 +1,18 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Playfair_Display, Poppins } from "next/font/google";
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-playfair",
+  weight: ["400", "600", "700"],
+});
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  variable: "--font-poppins",
+  weight: ["300", "400", "500", "600", "700"],
+});
 
 export const metadata: Metadata = {
   title: "JJ Industries - Complete Hotel Supply Solutions",
@@ -12,7 +25,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${playfair.variable} ${poppins.variable}`}>
+      <head>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+      </head>
       <body className="font-sans bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark antialiased transition-colors duration-300 min-h-full flex flex-col">
         {children}
       </body>
