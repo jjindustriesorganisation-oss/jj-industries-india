@@ -22,6 +22,9 @@ export default function ProductsPage() {
               <Link href="/products" className="text-primary dark:text-primary font-semibold border-b-2 border-primary pb-1 transition">
                 Products
               </Link>
+              <Link href="/about" className="text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary font-medium transition">
+                About
+              </Link>
               <Link href="/#industries" className="text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary font-medium transition">
                 Industries
               </Link>

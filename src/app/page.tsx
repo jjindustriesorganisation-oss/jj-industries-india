@@ -14,8 +14,8 @@ export default function Home() {
             </div>
             <nav className="hidden md:flex space-x-8">
               <a className="text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary font-medium transition" href="#">Home</a>
-
               <a className="text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary font-medium transition" href="/products">Products</a>
+              <a className="text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary font-medium transition" href="/about">About</a>
               <a className="text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary font-medium transition" href="#industries">Industries</a>
               <a className="text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary font-medium transition" href="#contact">Contact</a>
             </nav>
