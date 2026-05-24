@@ -15,7 +15,7 @@ export default function Home() {
             <nav className="hidden md:flex space-x-8">
               <a className="text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary font-medium transition" href="#">Home</a>
 
-              <a className="text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary font-medium transition" href="#products">Products</a>
+              <a className="text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary font-medium transition" href="/products">Products</a>
               <a className="text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary font-medium transition" href="#industries">Industries</a>
               <a className="text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary font-medium transition" href="#contact">Contact</a>
             </nav>
@@ -43,7 +43,7 @@ export default function Home() {
               Premium quality products bridging local manufacturing with global opportunities. We provide everything you need to deliver exceptional guest experiences.
             </p>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-4 pt-4">
-              <a className="w-full sm:w-auto bg-primary text-white px-8 py-3 rounded font-medium hover:bg-opacity-90 transition shadow-lg text-lg" href="#products">Explore Products</a>
+              <a className="w-full sm:w-auto bg-primary text-white px-8 py-3 rounded font-medium hover:bg-opacity-90 transition shadow-lg text-lg" href="/products">Explore Products</a>
               <a className="w-full sm:w-auto bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-white dark:hover:text-white px-8 py-3 rounded font-medium transition shadow-lg text-lg" href="#contact">Contact Us</a>
             </div>
           </div>
@@ -255,9 +255,9 @@ export default function Home() {
                     <a className="text-lg hover:text-primary transition" href="mailto:jjbaraiya@gmail.com">jjbaraiya@gmail.com</a>
                   </div>
 
-                  <div className="flex items-center gap-3">
-                    <span className="material-icons text-primary">location_on</span>
-                    <span className="text-lg">Bhavnagar, Gujarat, India</span>
+                  <div className="flex items-start gap-3">
+                    <span className="material-icons text-primary mt-1">location_on</span>
+                    <span className="text-lg">Plot No.9, Shivam Amrut 2 Re-Survey No. 64/1/3, Near Top 3 Cinema Adhewada, Tarsimiya, Bhavnagar, Gujarat, 364001</span>
                   </div>
                 </div>
               </div>
