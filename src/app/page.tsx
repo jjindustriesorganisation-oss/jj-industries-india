@@ -39,7 +39,7 @@ export default function Home() {
             <h2 className="font-display text-4xl md:text-6xl font-bold text-primary-dark dark:text-white leading-tight">
               Complete <span className="gold-gradient-text">Hotel Supply</span> Solutions
             </h2>
-            <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300">
+            <p className="text-lg md:text-xl text-gray-700 dark:text-gray-600">
               Premium quality products bridging local manufacturing with global opportunities. We provide everything you need to deliver exceptional guest experiences.
             </p>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-4 pt-4">
