@@ -9,7 +9,7 @@ export default function Home() {
                 JJ
               </div>
               <div>
-                <h1 className="font-display font-bold text-xl text-primary-dark dark:text-primary tracking-wide">JJ INDUSTRIES</h1>
+                <h1 className="font-display font-bold text-xl text-primary-dark dark:text-primary tracking-wide">INDUSTRIES</h1>
               </div>
             </div>
             <nav className="hidden md:flex space-x-8">
