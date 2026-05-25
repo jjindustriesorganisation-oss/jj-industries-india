@@ -176,7 +176,7 @@ export default function ProductsPage() {
                 <img
                   alt="Bathmat"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOGTlu0QLO2YSgkcZvidzZw8p00kd-mGN-Psdgj8NBdRoc_z4aRoI1sjv1KHZZ0pB6Do804mUP-0H6Re2Vgm6eni-SRfvnK1BJLoGAHMcbBZ-Qs1hFCB52CghRg4Mq8988eeBSCadVSkRBhjiAyk6KRwiwEFhaQ1czsK5fFMNUS0v5D8aBEL0r-__SSPe_6MU-FlhOmt2NQblg8C9QO9I7YPGmpBa46oxx-ZMZaPHfP_-bul0XuHb4xJZYgrw-hGkl9nO-nAZEw2o"
+                  src="/images/bathmat.png"
                 />
               </div>
               <div className="p-6 flex-1 flex flex-col justify-center">
