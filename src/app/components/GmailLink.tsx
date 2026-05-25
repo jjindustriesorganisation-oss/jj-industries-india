@@ -5,7 +5,7 @@ import React from "react";
 export default function GmailLink() {
   const handleEmailClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
-    const email = "jjbaraiya@gmail.com";
+    const email = "jjindustriesorganisation@gmail.com";
     const userAgent = typeof window !== "undefined" ? navigator.userAgent || navigator.vendor || (window as any).opera : "";
 
     const isIOS = /iPad|iPhone|iPod/.test(userAgent) && !(window as any).MSStream;
@@ -35,12 +35,12 @@ export default function GmailLink() {
     <a
       className="flex items-center gap-3 text-lg hover:text-primary transition cursor-pointer"
       onClick={handleEmailClick}
-      href="https://mail.google.com/mail/?view=cm&fs=1&to=jjbaraiya@gmail.com"
+      href="https://mail.google.com/mail/?view=cm&fs=1&to=jjindustriesorganisation@gmail.com"
       target="_blank"
       rel="noopener noreferrer"
     >
       <span className="material-icons text-primary">email</span>
-      <span>jjbaraiya@gmail.com</span>
+      <span>jjindustriesorganisation@gmail.com</span>
     </a>
   );
 }
