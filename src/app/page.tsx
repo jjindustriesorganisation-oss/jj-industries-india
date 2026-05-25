@@ -231,8 +231,10 @@ export default function Home() {
                 </div>
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
-                    <span className="material-icons text-primary">email</span>
-                    <a className="text-lg hover:text-primary transition" href="mailto:jjbaraiya@gmail.com">jjbaraiya@gmail.com</a>
+                    <a className="flex items-center gap-3 text-lg hover:text-primary transition" href="https://mail.google.com/mail/?view=cm&fs=1&to=jjbaraiya@gmail.com" target="_blank" rel="noopener noreferrer">
+                      <span className="material-icons text-primary">email</span>
+                      <span>jjbaraiya@gmail.com</span>
+                    </a>
                   </div>
 
                   <div className="flex items-start gap-3">
