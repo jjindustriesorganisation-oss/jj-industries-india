@@ -73,7 +73,7 @@ export default function ProductsPage() {
                 <img
                   alt="Pillow"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKRt-diZewrEqFBxpV52Rst74lt0aWC_lf4JkaKsrPHiWgVsHoMa0Vut8HqovZ4nhTN0g1pDqBfTf7eWdJJEZs5fcMl6O_7qjWszJl6SlgmwO7PMxOI8JJMuchjfhOcP3vYlW6MiaOA5QTyYEQOhlK9TqkW9Ap5lVgjLmbM1_Wpcx4GXFhnRsQ0ecDXOt9RFz4DfcYNcAdUAd-ATn9vFZ4FlI_fsfVaGkW-MmONpgLXvHt24OwvIbox-6RD0bgr6BsyQsMCmxV0Pw"
+                  src="/images/pillow.jpg"
                 />
               </div>
               <div className="p-6">
@@ -133,7 +133,7 @@ export default function ProductsPage() {
                 <img
                   alt="Runner"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbL4D6MbVLkms62f-xNiSHB7mpIr3xYnqIaNiuAVUaQ8rYbgZeWkAhBE-9AS-AUOvJ6G4F_98byagG5P9wamRc8WfiznWrZzZILVGEfSlQiV_oYZExlQ0tGonJ2jNPpI0nONYGgxIWCvHOFPN7MWRA003zY8vBNI0247yIzMHE_pLLdxRfga1gaggWBjw-7P-AzW3dEihdac-VjP1efXPwYk8kruBj25gmL9Q4wu-bx1tHr2ZAfVtsY9_bMIEK2wBqPfu75XUh_B4"
+                  src="/images/runner.jpg"
                 />
               </div>
               <div className="p-6">
@@ -234,7 +234,7 @@ export default function ProductsPage() {
                 <img
                   alt="Bowls"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1e0NoobOg2C8BOcT3vM16OYpPLnI3rL6QiUe7m5M0xxLUtzlQCUku0syNEZasUywxfDibgX3uzdpiPGZI9bwA1hxe72YTn98bDfEeoMBItq9qTh7OFxGrmGw5zL0391eCR2rq8WU8kT8hjt_42iJHO1g_81rhkL5VkT_xLsDfz8En7OKCOkCEpUQ7hcaafmnuKZ2Y1Pj6tf02XrC2_dHE6LqHdP2UDTEpQIQZ852YQ-GDPILowGsCwzIuqzMi-bIEyyhyApMocHo"
+                  src="/images/bowls.png"
                 />
               </div>
               <div className="p-6 flex-1 flex flex-col justify-center">

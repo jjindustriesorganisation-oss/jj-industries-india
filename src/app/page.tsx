@@ -214,13 +214,19 @@ export default function Home() {
                 <div className="inline-block bg-primary text-white font-bold py-1 px-4 rounded-full text-sm mb-6 uppercase tracking-wider">
                   Call Us Today
                 </div>
-                <div className="flex items-center gap-4 mb-8">
-                  <div className="w-16 h-16 bg-white text-primary-dark rounded-full flex items-center justify-center shadow-lg">
+                <div className="flex items-start gap-4 mb-8">
+                  <div className="w-16 h-16 bg-white text-primary-dark rounded-full flex items-center justify-center shadow-lg mt-1">
                     <span className="material-icons text-3xl">phone</span>
                   </div>
-                  <div>
-                    <p className="text-gray-300 text-sm uppercase tracking-wider">Direct Line</p>
-                    <a className="text-4xl font-bold font-display hover:text-primary transition" href="tel:9173422597">9173422597</a>
+                  <div className="space-y-4">
+                    <div>
+                      <p className="text-gray-300 text-sm uppercase tracking-wider">Jignesh Pandya</p>
+                      <a className="text-3xl font-bold font-display hover:text-primary transition block" href="tel:9724184527">9724184527</a>
+                    </div>
+                    <div>
+                      <p className="text-gray-300 text-sm uppercase tracking-wider">Jigna Baraiya</p>
+                      <a className="text-3xl font-bold font-display hover:text-primary transition block" href="tel:9173422597">9173422597</a>
+                    </div>
                   </div>
                 </div>
                 <div className="space-y-4">
