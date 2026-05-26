@@ -34,11 +34,13 @@ export default function Header() {
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center space-x-2">
               <Link href="/" className="flex items-center space-x-2 group">
-                <div className="w-10 h-10 bg-primary text-white flex items-center justify-center font-display font-bold text-2xl rounded shadow-md group-hover:scale-105 transition-transform">
-                  JJ
-                </div>
+                <img
+                  src="/images/logo.png"
+                  alt="JJ Industries Logo"
+                  className="w-10 h-10 object-contain group-hover:scale-105 transition-transform rounded"
+                />
                 <span className="font-display font-bold text-xl text-primary-dark dark:text-primary tracking-wide">
-                  INDUSTRIES
+                  JJ INDUSTRIES
                 </span>
               </Link>
             </div>
@@ -101,11 +103,13 @@ export default function Header() {
               {/* Close Button */}
               <div className="flex justify-between items-center mb-10">
                 <div className="flex items-center space-x-2">
-                  <div className="w-8 h-8 bg-primary text-white flex items-center justify-center font-display font-bold text-lg rounded">
-                    JJ
-                  </div>
+                  <img
+                    src="/images/logo.png"
+                    alt="JJ Industries Logo"
+                    className="w-8 h-8 object-contain rounded"
+                  />
                   <span className="font-display font-bold text-lg text-primary-dark dark:text-primary tracking-wide">
-                    INDUSTRIES
+                    JJ INDUSTRIES
                   </span>
                 </div>
                 <button

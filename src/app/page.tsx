@@ -242,6 +242,11 @@ export default function Home() {
                 </div>
               </div>
               <div className="mt-12 pt-8 border-t border-white/20 text-center relative z-10">
+                <img
+                  src="/images/logo.png"
+                  alt="JJ Industries Logo"
+                  className="w-16 h-16 mx-auto mb-4 object-contain rounded-full bg-white p-1"
+                />
                 <h2 className="font-display text-3xl font-bold mb-2">JJ INDUSTRIES</h2>
                 <p className="text-primary text-sm uppercase tracking-widest mb-4">Your Trust. Our Commitment.</p>
                 <p className="text-gray-300">PREMIUM PRODUCTS. SATISFIED CUSTOMERS.</p>
