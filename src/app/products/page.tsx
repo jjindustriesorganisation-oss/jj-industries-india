@@ -195,20 +195,18 @@ export default function ProductsPage() {
             <span className="text-primary font-semibold tracking-wider">03</span>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Dinner Sets - Tall Card */}
-            <div className="bg-surface-light dark:bg-surface-dark rounded-lg border border-gray-200 dark:border-gray-800 shadow-md overflow-hidden hover:-translate-y-1 transition-transform duration-300 border-t-2 border-t-primary group lg:row-span-2 flex flex-col">
-              <div className="h-96 overflow-hidden relative">
+            {/* Dinner Sets */}
+            <div className="bg-surface-light dark:bg-surface-dark rounded-lg border border-gray-200 dark:border-gray-800 shadow-md overflow-hidden hover:-translate-y-1 transition-transform duration-300 group flex flex-col">
+              <div className="h-64 bg-gray-100 dark:bg-gray-900 overflow-hidden relative">
                 <img
                   alt="Dinner Sets"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpppMkpC6ip66KOLI89oU9VMNQmF3xm72QhGD_bWzBqaRxHWXBrJsPlnqYLMWSGZAmhG9RznypS6kKT85iIYHQZBXV7s5KDTe5MfGAJP_hgIetMU2Oey_2ya3RqhE0bv2q6n_4apoBB4tqkaMTCwk5ibMwwDW-TI_ouffS3VvZXTPu4LJNiu-5cKcc48F4_HXVEdE-91TjIWq2tlCCgWSd_FmxFpSPwJpyJMDOV1CxXd6k7ThKEfCwHOA6fk0HbFTD3OJPZ5Pp8Kk"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
-                  <h3 className="font-display text-2xl font-bold text-white">Dinner Sets</h3>
-                </div>
               </div>
-              <div className="p-6 flex-1 flex flex-col justify-between">
-                <p className="text-text-light dark:text-text-dark">
+              <div className="p-6 flex-1 flex flex-col justify-center">
+                <h3 className="font-display text-xl font-bold text-primary-dark dark:text-white mb-2">Dinner Sets</h3>
+                <p className="text-text-light dark:text-text-dark text-sm">
                   Complete, chip-resistant porcelain collections for fine dining establishments.
                 </p>
               </div>
@@ -244,6 +242,21 @@ export default function ProductsPage() {
               </div>
             </div>
 
+            {/* Wooden Crockery Set */}
+            <div className="bg-surface-light dark:bg-surface-dark rounded-lg border border-gray-200 dark:border-gray-800 shadow-md overflow-hidden hover:-translate-y-1 transition-transform duration-300 group flex flex-col">
+              <div className="h-64 bg-gray-100 dark:bg-gray-900 overflow-hidden relative">
+                <img
+                  alt="Wooden Crockery Set"
+                  className="w-full h-full object-cover object-[center_35%] group-hover:scale-105 transition-transform duration-500"
+                  src="/images/wooden_crockery.png"
+                />
+              </div>
+              <div className="p-6 flex-1 flex flex-col justify-center">
+                <h3 className="font-display text-xl font-bold text-primary-dark dark:text-white mb-2">Wooden Crockery Set</h3>
+                <p className="text-text-light dark:text-text-dark text-sm">Premium handcrafted, sustainable wooden tableware for a rustic aesthetic.</p>
+              </div>
+            </div>
+
             {/* Plates */}
             <div className="bg-surface-light dark:bg-surface-dark rounded-lg border border-gray-200 dark:border-gray-800 shadow-md overflow-hidden hover:-translate-y-1 transition-transform duration-300 group flex flex-col">
               <div className="h-64 bg-gray-100 dark:bg-gray-900 overflow-hidden relative">
@@ -271,21 +284,6 @@ export default function ProductsPage() {
               <div className="p-6 flex-1 flex flex-col justify-center">
                 <h3 className="font-display text-xl font-bold text-primary-dark dark:text-white mb-2">Serveware</h3>
                 <p className="text-text-light dark:text-text-dark text-sm">Generously proportioned platters and stands for banquet service.</p>
-              </div>
-            </div>
-
-            {/* Wooden Crockery Set */}
-            <div className="bg-surface-light dark:bg-surface-dark rounded-lg border border-gray-200 dark:border-gray-800 shadow-md overflow-hidden hover:-translate-y-1 transition-transform duration-300 group flex flex-col">
-              <div className="h-64 bg-gray-100 dark:bg-gray-900 overflow-hidden relative">
-                <img
-                  alt="Wooden Crockery Set"
-                  className="w-full h-full object-cover object-[center_35%] group-hover:scale-105 transition-transform duration-500"
-                  src="/images/wooden_crockery.png"
-                />
-              </div>
-              <div className="p-6 flex-1 flex flex-col justify-center">
-                <h3 className="font-display text-xl font-bold text-primary-dark dark:text-white mb-2">Wooden Crockery Set</h3>
-                <p className="text-text-light dark:text-text-dark text-sm">Premium handcrafted, sustainable wooden tableware for a rustic aesthetic.</p>
               </div>
             </div>
           </div>
