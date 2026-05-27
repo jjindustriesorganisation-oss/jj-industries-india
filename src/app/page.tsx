@@ -114,6 +114,18 @@ export default function Home() {
                 </ul>
               </div>
             </div>
+            <div className="bg-surface-light dark:bg-surface-dark rounded-lg overflow-hidden shadow-lg border-t-4 border-[#8B5A2B] transition-transform hover:-translate-y-2">
+              <div className="bg-[#8B5A2B] text-white text-center py-2 font-bold tracking-wider">WOODEN CROCKERY</div>
+              <img alt="Wooden crockery set" className="w-full h-48 object-cover object-center" src="/images/wooden_crockery.png" />
+              <div className="p-6">
+                <ul className="space-y-2 text-text-light dark:text-text-dark">
+                  <li className="flex items-center"><span className="w-1.5 h-1.5 bg-[#8B5A2B] rounded-full mr-2"></span>Wooden Dinnerware</li>
+                  <li className="flex items-center"><span className="w-1.5 h-1.5 bg-[#8B5A2B] rounded-full mr-2"></span>Serving Platters</li>
+                  <li className="flex items-center"><span className="w-1.5 h-1.5 bg-[#8B5A2B] rounded-full mr-2"></span>Salad Bowls</li>
+                  <li className="flex items-center"><span className="w-1.5 h-1.5 bg-[#8B5A2B] rounded-full mr-2"></span>Handcrafted Utensils</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </section>
