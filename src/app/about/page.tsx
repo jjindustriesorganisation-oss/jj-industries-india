@@ -33,57 +33,96 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Leader Profile Section */}
+        {/* Leadership Section */}
         <section className="py-20 px-4 sm:px-6 lg:px-8 bg-surface-light dark:bg-surface-dark">
-          <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Image Container */}
-            <div className="relative group max-w-md mx-auto lg:max-w-none">
-              <div className="absolute inset-0 bg-primary/10 rounded-2xl transform rotate-3 scale-105 group-hover:rotate-6 transition-transform duration-500"></div>
-              <div className="relative rounded-2xl overflow-hidden bg-white dark:bg-surface-dark shadow-2xl p-3 border border-gray-200 dark:border-gray-800">
-                <img
-                  alt="Jigna Baraiya Portrait"
-                  className="w-full h-auto rounded-xl object-cover aspect-[4/5]"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZl8bVFHqmIFHjC4VPybKS9ewVnPm_w7T1P6ZCYOgZMSDUNWiwldyegezR3XIWDyKb50qMPbBwS06iVq0GKUK_rIjcfNfOFzyCludj7CkmwJpqz_Yx_XrEx-BkG-AuCZ8RNc2P5DaXO3BBRLP9rNTummFm2xoh6t3PkGjVXvm0NexDSO01pZeBs_X49umOaG9DXG5Te8K2EZX5I_6sLA21fWQo9FzLyMCPIcqqHAWH_WIZBKW5wt-Ohq4zOYVfhCrfNWHddF-ZFvI"
-                />
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-16 space-y-4">
+              <div className="flex items-center justify-center gap-4">
+                <div className="h-px bg-primary w-16"></div>
+                <h2 className="font-display text-3xl md:text-4xl font-bold text-primary-dark dark:text-white uppercase tracking-wider">Our Leadership</h2>
+                <div className="h-px bg-primary w-16"></div>
+              </div>
+              <p className="text-text-light dark:text-text-dark max-w-2xl mx-auto">
+                Meet our founding leaders driving innovation and bridging local manufacturing with global opportunities in Bhavnagar, Gujarat.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+              {/* Jignesh Pandya Card */}
+              <div className="bg-background-light dark:bg-background-dark rounded-2xl overflow-hidden shadow-xl border border-gray-200 dark:border-gray-800 flex flex-col group hover:-translate-y-1 transition-transform duration-300">
+                <div className="relative overflow-hidden aspect-[4/5] bg-gray-100 dark:bg-gray-900">
+                  <img
+                    alt="Jignesh Pandya Portrait"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    src="/images/founder_jignesh.png"
+                  />
+                </div>
+                <div className="p-8 flex-grow flex flex-col justify-between space-y-4">
+                  <div>
+                    <span className="text-primary font-semibold uppercase tracking-wider text-xs block mb-1">Founder &amp; Director</span>
+                    <h3 className="font-display text-2xl font-bold text-primary-dark dark:text-white">Jignesh Pandya</h3>
+                    <p className="text-text-light dark:text-text-dark text-sm mt-3 leading-relaxed">
+                      Co-founder and leader overseeing operations and local manufacturing quality standards, bringing years of expertise to commercial supplies.
+                    </p>
+                  </div>
+                  <div className="pt-4 border-t border-gray-200 dark:border-gray-800 flex items-center gap-3">
+                    <span className="material-icons text-primary">phone</span>
+                    <a className="font-medium hover:text-primary transition" href="tel:9724184527">9724184527</a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Jigna Baraiya Card */}
+              <div className="bg-background-light dark:bg-background-dark rounded-2xl overflow-hidden shadow-xl border border-gray-200 dark:border-gray-800 flex flex-col group hover:-translate-y-1 transition-transform duration-300">
+                <div className="relative overflow-hidden aspect-[4/5] bg-gray-100 dark:bg-gray-900">
+                  <img
+                    alt="Jigna Baraiya Portrait"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    src="/images/founder_jigna.png"
+                  />
+                </div>
+                <div className="p-8 flex-grow flex flex-col justify-between space-y-4">
+                  <div>
+                    <span className="text-primary font-semibold uppercase tracking-wider text-xs block mb-1">Founder &amp; Director</span>
+                    <h3 className="font-display text-2xl font-bold text-primary-dark dark:text-white">Jigna Baraiya</h3>
+                    <p className="text-text-light dark:text-text-dark text-sm mt-3 leading-relaxed">
+                      Co-founder driving business strategy, client partnerships, and direct customer relationships, building long-term trust in hotel supplies.
+                    </p>
+                  </div>
+                  <div className="pt-4 border-t border-gray-200 dark:border-gray-800 flex items-center gap-3">
+                    <span className="material-icons text-primary">phone</span>
+                    <a className="font-medium hover:text-primary transition" href="tel:9173422597">9173422597</a>
+                  </div>
+                </div>
               </div>
             </div>
 
-            {/* Profile Info */}
-            <div className="space-y-6">
-              <div className="flex items-center gap-4">
-                <div className="h-0.5 w-12 bg-primary"></div>
-                <span className="text-primary font-semibold uppercase tracking-wider text-sm">Meet Our Leader</span>
-              </div>
-              <h2 className="font-display text-3xl md:text-4xl font-bold text-primary-dark dark:text-white">
-                Introducing Jigna Baraiya
-              </h2>
-              <p className="text-lg text-text-light dark:text-text-dark leading-relaxed">
-                Meet Jigna Baraiya, a dynamic entrepreneur based right here in Bhavnagar, bridging local manufacturing with global opportunities.
+            {/* Quote block */}
+            <div className="mt-16 max-w-3xl mx-auto bg-surface-light dark:bg-surface-dark p-8 rounded-2xl border-l-4 border-primary shadow-lg text-center">
+              <span className="material-icons text-primary text-4xl mb-2">format_quote</span>
+              <p className="text-lg text-text-light dark:text-text-dark italic font-medium leading-relaxed">
+                &ldquo;Our vision is to elevate the standard of hospitality supplies by insisting on uncompromising quality and fostering long-term relationships built on absolute trust.&rdquo;
               </p>
-              
-              <div className="bg-background-light dark:bg-background-dark p-6 rounded-xl border-l-4 border-primary shadow-sm">
-                <p className="text-text-light dark:text-text-dark italic font-medium">
-                  &ldquo;Our vision is to elevate the standard of hospitality supplies by insisting on uncompromising quality and fostering long-term relationships built on absolute trust.&rdquo;
-                </p>
-              </div>
+              <span className="text-sm font-semibold text-primary uppercase tracking-wider block mt-4">— JJ Industries Leadership</span>
+            </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
-                <div className="flex items-center gap-3">
-                  <span className="material-icons text-primary">verified</span>
-                  <span className="font-medium text-primary-dark dark:text-white">Premium Quality</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <span className="material-icons text-primary">local_shipping</span>
-                  <span className="font-medium text-primary-dark dark:text-white">Pan India Delivery</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <span className="material-icons text-primary">payments</span>
-                  <span className="font-medium text-primary-dark dark:text-white">Best Wholesale Prices</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <span className="material-icons text-primary">handshake</span>
-                  <span className="font-medium text-primary-dark dark:text-white">Long Term Relationship</span>
-                </div>
+            {/* Benefits Row */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto mt-16 pt-12 border-t border-gray-200 dark:border-gray-800">
+              <div className="flex items-center gap-3 justify-center">
+                <span className="material-icons text-primary">verified</span>
+                <span className="font-medium text-primary-dark dark:text-white">Premium Quality</span>
+              </div>
+              <div className="flex items-center gap-3 justify-center">
+                <span className="material-icons text-primary">local_shipping</span>
+                <span className="font-medium text-primary-dark dark:text-white">Pan India Delivery</span>
+              </div>
+              <div className="flex items-center gap-3 justify-center">
+                <span className="material-icons text-primary">payments</span>
+                <span className="font-medium text-primary-dark dark:text-white">Best Wholesale Prices</span>
+              </div>
+              <div className="flex items-center gap-3 justify-center">
+                <span className="material-icons text-primary">handshake</span>
+                <span className="font-medium text-primary-dark dark:text-white">Long Term Relationship</span>
               </div>
             </div>
           </div>
