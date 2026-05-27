@@ -272,6 +272,21 @@ export default function ProductsPage() {
                 <p className="text-text-light dark:text-text-dark text-sm">Generously proportioned platters and stands for banquet service.</p>
               </div>
             </div>
+
+            {/* Wooden Crockery Set */}
+            <div className="bg-surface-light dark:bg-surface-dark rounded-lg border border-gray-200 dark:border-gray-800 shadow-md overflow-hidden hover:-translate-y-1 transition-transform duration-300 group flex flex-col">
+              <div className="h-48 bg-gray-100 dark:bg-gray-900 overflow-hidden relative">
+                <img
+                  alt="Wooden Crockery Set"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  src="/images/wooden_crockery.png"
+                />
+              </div>
+              <div className="p-6 flex-1 flex flex-col justify-center">
+                <h3 className="font-display text-xl font-bold text-primary-dark dark:text-white mb-2">Wooden Crockery Set</h3>
+                <p className="text-text-light dark:text-text-dark text-sm">Premium handcrafted, sustainable wooden tableware for a rustic aesthetic.</p>
+              </div>
+            </div>
           </div>
         </section>
       </main>
