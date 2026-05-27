@@ -216,7 +216,7 @@ export default function ProductsPage() {
 
             {/* Tea & Coffee Sets */}
             <div className="bg-surface-light dark:bg-surface-dark rounded-lg border border-gray-200 dark:border-gray-800 shadow-md overflow-hidden hover:-translate-y-1 transition-transform duration-300 group flex flex-col">
-              <div className="h-48 bg-gray-100 dark:bg-gray-900 overflow-hidden relative">
+              <div className="h-64 bg-gray-100 dark:bg-gray-900 overflow-hidden relative">
                 <img
                   alt="Tea &amp; Coffee Sets"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -231,7 +231,7 @@ export default function ProductsPage() {
 
             {/* Bowls */}
             <div className="bg-surface-light dark:bg-surface-dark rounded-lg border border-gray-200 dark:border-gray-800 shadow-md overflow-hidden hover:-translate-y-1 transition-transform duration-300 group flex flex-col">
-              <div className="h-48 bg-gray-100 dark:bg-gray-900 overflow-hidden relative">
+              <div className="h-64 bg-gray-100 dark:bg-gray-900 overflow-hidden relative">
                 <img
                   alt="Bowls"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -246,7 +246,7 @@ export default function ProductsPage() {
 
             {/* Plates */}
             <div className="bg-surface-light dark:bg-surface-dark rounded-lg border border-gray-200 dark:border-gray-800 shadow-md overflow-hidden hover:-translate-y-1 transition-transform duration-300 group flex flex-col">
-              <div className="h-48 bg-gray-100 dark:bg-gray-900 overflow-hidden relative">
+              <div className="h-64 bg-gray-100 dark:bg-gray-900 overflow-hidden relative">
                 <img
                   alt="Plates"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -261,7 +261,7 @@ export default function ProductsPage() {
 
             {/* Serveware */}
             <div className="bg-surface-light dark:bg-surface-dark rounded-lg border border-gray-200 dark:border-gray-800 shadow-md overflow-hidden hover:-translate-y-1 transition-transform duration-300 group flex flex-col">
-              <div className="h-48 bg-gray-100 dark:bg-gray-900 overflow-hidden relative">
+              <div className="h-64 bg-gray-100 dark:bg-gray-900 overflow-hidden relative">
                 <img
                   alt="Serveware"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -276,10 +276,10 @@ export default function ProductsPage() {
 
             {/* Wooden Crockery Set */}
             <div className="bg-surface-light dark:bg-surface-dark rounded-lg border border-gray-200 dark:border-gray-800 shadow-md overflow-hidden hover:-translate-y-1 transition-transform duration-300 group flex flex-col">
-              <div className="h-48 bg-gray-100 dark:bg-gray-900 overflow-hidden relative">
+              <div className="h-64 bg-gray-100 dark:bg-gray-900 overflow-hidden relative">
                 <img
                   alt="Wooden Crockery Set"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover object-[center_35%] group-hover:scale-105 transition-transform duration-500"
                   src="/images/wooden_crockery.png"
                 />
               </div>
