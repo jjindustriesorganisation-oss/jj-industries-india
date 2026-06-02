@@ -6,12 +6,14 @@ const playfair = Playfair_Display({
   subsets: ["latin"],
   variable: "--font-playfair",
   weight: ["400", "600", "700"],
+  display: "swap",
 });
 
 const poppins = Poppins({
   subsets: ["latin"],
   variable: "--font-poppins",
   weight: ["300", "400", "500", "600", "700"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -27,7 +29,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${playfair.variable} ${poppins.variable}`}>
       <head>
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap" rel="stylesheet" />
       </head>
       <body className="font-sans bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark antialiased transition-colors duration-300 min-h-full flex flex-col">
         {children}

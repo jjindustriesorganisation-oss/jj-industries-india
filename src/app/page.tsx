@@ -1,13 +1,32 @@
+import Image from "next/image";
 import Header from "@/app/components/Header";
 import GmailLink from "@/app/components/GmailLink";
 import Footer from "@/app/components/Footer";
+
+import towelsCategoryImg from "@/../public/images/towels_category.png";
+import beddingCategoryImg from "@/../public/images/bedding_category.png";
+import pillowCategoryImg from "@/../public/images/pillow_category.png";
+import crockeryCategoryImg from "@/../public/images/crockery_category.png";
+import sheetsCategoryImg from "@/../public/images/sheets_category.png";
+import protectorCategoryImg from "@/../public/images/protector_category.png";
+import amenitiesCategoryImg from "@/../public/images/amenities_category.png";
+import woodenCrockeryImg from "@/../public/images/wooden_crockery.png";
+import logoImg from "@/../public/images/logo.png";
 
 export default function Home() {
   return (
     <>
       <Header />
 
-      <section className="marble-bg min-h-[819px] flex items-center">
+      <section className="marble-bg min-h-[819px] flex items-center overflow-hidden">
+        <Image
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8wP2rNkhG5q9SQ5nHgCtkA3wypN_cCOb8bn3ec3rzFUzZruBgGmMQJi0blR_G-3AABj3Xdp6z3n9vmobMmEyaFZSa7-UEx_1ldG08t51N8-cNJw-y5WqwwxM93YZWa8ktDmvQRb7k2skmyPhtQjCyH3oHZ9a-rj2WYw1PKlpeDm-VxJR7ktHmoXLRI9E14SVRg0GL-x34i0aQBUMvuG8cjPknabFrx4pmKfzPwGaJ9B2FAbs1ZIanrTJR4K96f7CuL00kR8EJB1A"
+          alt="Marble Background"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
+        />
         <div className="marble-overlay"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-20">
           <div className="text-center max-w-3xl mx-auto space-y-6">
@@ -41,7 +60,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-surface-light dark:bg-surface-dark rounded-lg overflow-hidden shadow-lg border-t-4 border-[#4FB3B8] transition-transform hover:-translate-y-2">
               <div className="bg-[#4FB3B8] text-white text-center py-2 font-bold tracking-wider">TOWELS</div>
-              <img alt="White folded hotel towels" className="w-full h-48 object-cover" src="/images/towels_category.png" />
+              <Image alt="White folded hotel towels" className="w-full h-48 object-cover" src={towelsCategoryImg} placeholder="blur" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw" />
               <div className="p-6">
                 <ul className="space-y-2 text-text-light dark:text-text-dark">
                   <li className="flex items-center"><span className="w-1.5 h-1.5 bg-[#4FB3B8] rounded-full mr-2"></span>Bath Towel</li>
@@ -53,7 +72,7 @@ export default function Home() {
             </div>
             <div className="bg-surface-light dark:bg-surface-dark rounded-lg overflow-hidden shadow-lg border-t-4 border-[#7E57C2] transition-transform hover:-translate-y-2">
               <div className="bg-[#7E57C2] text-white text-center py-2 font-bold tracking-wider">QUILTS</div>
-              <img alt="White hotel quilt" className="w-full h-48 object-cover" src="/images/bedding_category.png" />
+              <Image alt="White hotel quilt" className="w-full h-48 object-cover" src={beddingCategoryImg} placeholder="blur" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw" />
               <div className="p-6">
                 <ul className="space-y-2 text-text-light dark:text-text-dark">
                   <li className="flex items-center"><span className="w-1.5 h-1.5 bg-[#7E57C2] rounded-full mr-2"></span>Microfiber Quilt</li>
@@ -64,7 +83,7 @@ export default function Home() {
             </div>
             <div className="bg-surface-light dark:bg-surface-dark rounded-lg overflow-hidden shadow-lg border-t-4 border-[#EC407A] transition-transform hover:-translate-y-2">
               <div className="bg-[#EC407A] text-white text-center py-2 font-bold tracking-wider">PILLOWS</div>
-              <img alt="White hotel pillows" className="w-full h-48 object-cover" src="/images/pillow_category.png" />
+              <Image alt="White hotel pillows" className="w-full h-48 object-cover" src={pillowCategoryImg} placeholder="blur" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw" />
               <div className="p-6">
                 <ul className="space-y-2 text-text-light dark:text-text-dark">
                   <li className="flex items-center"><span className="w-1.5 h-1.5 bg-[#EC407A] rounded-full mr-2"></span>Fiber Pillow</li>
@@ -75,7 +94,7 @@ export default function Home() {
             </div>
             <div className="bg-surface-light dark:bg-surface-dark rounded-lg overflow-hidden shadow-lg border-t-4 border-[#F57C00] transition-transform hover:-translate-y-2">
               <div className="bg-[#F57C00] text-white text-center py-2 font-bold tracking-wider">CROCKERY</div>
-              <img alt="Elegant hotel crockery set" className="w-full h-48 object-cover" src="/images/crockery_category.png" />
+              <Image alt="Elegant hotel crockery set" className="w-full h-48 object-cover" src={crockeryCategoryImg} placeholder="blur" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw" />
               <div className="p-6">
                 <ul className="space-y-2 text-text-light dark:text-text-dark">
                   <li className="flex items-center"><span className="w-1.5 h-1.5 bg-[#F57C00] rounded-full mr-2"></span>Dinner Sets</li>
@@ -87,7 +106,7 @@ export default function Home() {
             </div>
             <div className="bg-surface-light dark:bg-surface-dark rounded-lg overflow-hidden shadow-lg border-t-4 border-[#0288D1] transition-transform hover:-translate-y-2">
               <div className="bg-[#0288D1] text-white text-center py-2 font-bold tracking-wider">BED SHEETS</div>
-              <img alt="Bed sheets" className="w-full h-48 object-cover" src="/images/sheets_category.png" />
+              <Image alt="Bed sheets" className="w-full h-48 object-cover" src={sheetsCategoryImg} placeholder="blur" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw" />
               <div className="p-6">
                 <ul className="space-y-2 text-text-light dark:text-text-dark">
                   <li className="flex items-center"><span className="w-1.5 h-1.5 bg-[#0288D1] rounded-full mr-2"></span>Sateen Striped Bedsheet</li>
@@ -97,7 +116,7 @@ export default function Home() {
             </div>
             <div className="bg-surface-light dark:bg-surface-dark rounded-lg overflow-hidden shadow-lg border-t-4 border-[#AB47BC] transition-transform hover:-translate-y-2">
               <div className="bg-[#AB47BC] text-white text-center py-2 font-bold tracking-wider">MATTRESS PROTECTORS</div>
-              <img alt="Mattress protector" className="w-full h-48 object-cover" src="/images/protector_category.png" />
+              <Image alt="Mattress protector" className="w-full h-48 object-cover" src={protectorCategoryImg} placeholder="blur" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw" />
               <div className="p-6">
                 <ul className="space-y-2 text-text-light dark:text-text-dark">
                   <li className="flex items-center"><span className="w-1.5 h-1.5 bg-[#AB47BC] rounded-full mr-2"></span>Waterproof Quilted Protector</li>
@@ -106,7 +125,7 @@ export default function Home() {
             </div>
             <div className="bg-surface-light dark:bg-surface-dark rounded-lg overflow-hidden shadow-lg border-t-4 border-[#26A69A] transition-transform hover:-translate-y-2">
               <div className="bg-[#26A69A] text-white text-center py-2 font-bold tracking-wider">HOTEL AMENITIES</div>
-              <img alt="Hotel amenities" className="w-full h-48 object-cover" src="/images/amenities_category.png" />
+              <Image alt="Hotel amenities" className="w-full h-48 object-cover" src={amenitiesCategoryImg} placeholder="blur" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw" />
               <div className="p-6">
                 <ul className="space-y-2 text-text-light dark:text-text-dark">
                   <li className="flex items-center"><span className="w-1.5 h-1.5 bg-[#26A69A] rounded-full mr-2"></span>Eco-Luxe Amenities Kit</li>
@@ -116,7 +135,7 @@ export default function Home() {
             </div>
             <div className="bg-surface-light dark:bg-surface-dark rounded-lg overflow-hidden shadow-lg border-t-4 border-[#8B5A2B] transition-transform hover:-translate-y-2">
               <div className="bg-[#8B5A2B] text-white text-center py-2 font-bold tracking-wider">WOODEN CROCKERY</div>
-              <img alt="Wooden crockery set" className="w-full h-48 object-cover object-center" src="/images/wooden_crockery.png" />
+              <Image alt="Wooden crockery set" className="w-full h-48 object-cover object-center" src={woodenCrockeryImg} placeholder="blur" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw" />
               <div className="p-6">
                 <ul className="space-y-2 text-text-light dark:text-text-dark">
                   <li className="flex items-center"><span className="w-1.5 h-1.5 bg-[#8B5A2B] rounded-full mr-2"></span>Wooden Dinnerware</li>
@@ -255,10 +274,13 @@ export default function Home() {
                 </div>
               </div>
               <div className="mt-12 pt-8 border-t border-white/20 text-center relative z-10">
-                <img
-                  src="/images/logo.png"
+                <Image
+                  src={logoImg}
                   alt="JJ Industries Logo"
+                  width={64}
+                  height={64}
                   className="w-16 h-16 mx-auto mb-4 object-contain rounded-full bg-white p-1"
+                  placeholder="blur"
                 />
                 <h2 className="font-display text-3xl font-bold mb-2">JJ INDUSTRIES</h2>
                 <p className="text-primary text-sm uppercase tracking-widest mb-4">Your Trust. Our Commitment.</p>

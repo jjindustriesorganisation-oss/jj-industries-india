@@ -15,9 +15,6 @@
 }
 
 .marble-bg {
-  background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuA8wP2rNkhG5q9SQ5nHgCtkA3wypN_cCOb8bn3ec3rzFUzZruBgGmMQJi0blR_G-3AABj3Xdp6z3n9vmobMmEyaFZSa7-UEx_1ldG08t51N8-cNJw-y5WqwwxM93YZWa8ktDmvQRb7k2skmyPhtQjCyH3oHZ9a-rj2WYw1PKlpeDm-VxJR7ktHmoXLRI9E14SVRg0GL-x34i0aQBUMvuG8cjPknabFrx4pmKfzPwGaJ9B2FAbs1ZIanrTJR4K96f7CuL00kR8EJB1A);
-  background-size: cover;
-  background-position: center;
   position: relative;
 }
 .marble-overlay {

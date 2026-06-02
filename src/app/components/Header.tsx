@@ -3,6 +3,8 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
+import logoImg from "@/../public/images/logo.png";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,10 +36,13 @@ export default function Header() {
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center space-x-2">
               <Link href="/" className="flex items-center space-x-2 group">
-                <img
-                  src="/images/logo.png"
+                <Image
+                  src={logoImg}
                   alt="JJ Industries Logo"
+                  width={40}
+                  height={40}
                   className="w-10 h-10 object-contain group-hover:scale-105 transition-transform rounded"
+                  placeholder="blur"
                 />
                 <span className="font-display font-bold text-xl text-primary-dark dark:text-primary tracking-wide">
                   JJ INDUSTRIES
@@ -103,10 +108,13 @@ export default function Header() {
               {/* Close Button */}
               <div className="flex justify-between items-center mb-10">
                 <div className="flex items-center space-x-2">
-                  <img
-                    src="/images/logo.png"
+                  <Image
+                    src={logoImg}
                     alt="JJ Industries Logo"
+                    width={32}
+                    height={32}
                     className="w-8 h-8 object-contain rounded"
+                    placeholder="blur"
                   />
                   <span className="font-display font-bold text-lg text-primary-dark dark:text-primary tracking-wide">
                     JJ INDUSTRIES

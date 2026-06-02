@@ -1,6 +1,10 @@
+import Image from "next/image";
 import Header from "@/app/components/Header";
 import Link from "next/link";
 import Footer from "@/app/components/Footer";
+
+import founderJigneshImg from "@/../public/images/founder_jignesh.png";
+import founderJignaImg from "@/../public/images/founder_jigna.png";
 
 export default function AboutPage() {
   return (
@@ -10,7 +14,15 @@ export default function AboutPage() {
       {/* Main Content */}
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="relative py-20 px-4 sm:px-6 lg:px-8 marble-bg min-h-[500px] flex items-center justify-center text-center">
+        <section className="relative py-20 px-4 sm:px-6 lg:px-8 marble-bg min-h-[500px] flex items-center justify-center text-center overflow-hidden">
+          <Image
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8wP2rNkhG5q9SQ5nHgCtkA3wypN_cCOb8bn3ec3rzFUzZruBgGmMQJi0blR_G-3AABj3Xdp6z3n9vmobMmEyaFZSa7-UEx_1ldG08t51N8-cNJw-y5WqwwxM93YZWa8ktDmvQRb7k2skmyPhtQjCyH3oHZ9a-rj2WYw1PKlpeDm-VxJR7ktHmoXLRI9E14SVRg0GL-x34i0aQBUMvuG8cjPknabFrx4pmKfzPwGaJ9B2FAbs1ZIanrTJR4K96f7CuL00kR8EJB1A"
+            alt="Marble Background"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover"
+          />
           <div className="marble-overlay"></div>
           <div className="relative z-10 max-w-4xl mx-auto space-y-6">
             <span className="text-primary font-semibold tracking-[0.2em] uppercase block text-sm md:text-base">
@@ -52,10 +64,11 @@ export default function AboutPage() {
               {/* Jignesh Pandya Card */}
               <div className="bg-background-light dark:bg-background-dark rounded-2xl overflow-hidden shadow-xl border border-gray-200 dark:border-gray-800 flex flex-col group hover:-translate-y-1 transition-transform duration-300">
                 <div className="relative overflow-hidden aspect-[4/5] bg-gray-100 dark:bg-gray-900">
-                  <img
+                  <Image
                     alt="Jignesh Pandya Portrait"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    src="/images/founder_jignesh.png"
+                    src={founderJigneshImg}
+                    placeholder="blur"
                   />
                 </div>
                 <div className="p-8 flex-grow flex flex-col justify-between space-y-4">
@@ -76,10 +89,11 @@ export default function AboutPage() {
               {/* Jigna Baraiya Card */}
               <div className="bg-background-light dark:bg-background-dark rounded-2xl overflow-hidden shadow-xl border border-gray-200 dark:border-gray-800 flex flex-col group hover:-translate-y-1 transition-transform duration-300">
                 <div className="relative overflow-hidden aspect-[4/5] bg-gray-100 dark:bg-gray-900">
-                  <img
+                  <Image
                     alt="Jigna Baraiya Portrait"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    src="/images/founder_jigna.png"
+                    src={founderJignaImg}
+                    placeholder="blur"
                   />
                 </div>
                 <div className="p-8 flex-grow flex flex-col justify-between space-y-4">

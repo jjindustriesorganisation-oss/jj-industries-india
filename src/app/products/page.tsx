@@ -1,5 +1,12 @@
+import Image from "next/image";
 import Header from "@/app/components/Header";
 import Footer from "@/app/components/Footer";
+
+import pillowImg from "@/../public/images/pillow.jpg";
+import runnerImg from "@/../public/images/runner.jpg";
+import bathmatImg from "@/../public/images/bathmat.png";
+import bowlsImg from "@/../public/images/bowls.png";
+import woodenCrockeryImg from "@/../public/images/wooden_crockery.png";
 
 export default function ProductsPage() {
   return (
@@ -26,10 +33,12 @@ export default function ProductsPage() {
             {/* Mattress Protector */}
             <div className="bg-surface-light dark:bg-surface-dark rounded-lg border border-gray-200 dark:border-gray-800 shadow-md overflow-hidden hover:-translate-y-1 transition-transform duration-300 border-t-2 border-t-primary group">
               <div className="h-64 bg-gray-100 dark:bg-gray-900 overflow-hidden relative">
-                <img
+                <Image
                   alt="Mattress Protector"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfFDMcCnOeUbUWLn_K32DaQVumn4mV18W6UEvAfVCPzuLWTvfVWy5KOx8tTJtX7290i11VMfJ2Bj--xIIBXZIRzr8tcigtZt4AFTzYg8HSxrONVfvYTx98wEPgB50EslijNG6sm_9XmvRwn4bD_QEZXH352ohyRIgFFiLVhT6OydSbpRNH4h9kNa9n__pfXqqgpVCZ6DitJnMZ9T9AD-KObKKbgNvp49xiP5DAFfEjrGKAAvc2bxrm8spPDugP-Ypg2MTzfbWhojI"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 />
               </div>
               <div className="p-6">
@@ -41,10 +50,12 @@ export default function ProductsPage() {
             {/* Bedsheet */}
             <div className="bg-surface-light dark:bg-surface-dark rounded-lg border border-gray-200 dark:border-gray-800 shadow-md overflow-hidden hover:-translate-y-1 transition-transform duration-300 border-t-2 border-t-primary group">
               <div className="h-64 bg-gray-100 dark:bg-gray-900 overflow-hidden relative">
-                <img
+                <Image
                   alt="Bedsheet"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuAf6qZUoLIXekFJLQOqZCmXBPlc6BFO266eDCOUcM_VsDNU6aViQJ9vj-wCEXV4Zkm6dvp02V1yQsUXLE5Vln6ljqBIM_n3V2A7oSFYoa9mwTsOJ-VqRGQskugkHBt4ppNfgsU8yGPL8LyBe0amDLFqDDxazuZ3QUq8l8e-3kwk7sUBhNgKBpnKPc9j1h7CB631AgqsTAgHKUHPCBob8Y5QWlRaRTArFGDxBRy2cQJq-QXrjKmrTQMWBS42LeKZYqcSLJkYHehH5o8"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 />
               </div>
               <div className="p-6">
@@ -56,10 +67,12 @@ export default function ProductsPage() {
             {/* Pillow Cover */}
             <div className="bg-surface-light dark:bg-surface-dark rounded-lg border border-gray-200 dark:border-gray-800 shadow-md overflow-hidden hover:-translate-y-1 transition-transform duration-300 group">
               <div className="h-64 bg-gray-100 dark:bg-gray-900 overflow-hidden relative">
-                <img
+                <Image
                   alt="Pillow Cover"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbF41VS16Ndv6BcnXllbvWkRtoB3CUiiJVwt-GwMrBNLWiDL9Vu8RrlTFqkOnMlsjLBHwQ0yH7b0IvfDSXp5o96H47eMek6PgNRUJZUDZ8U6Upx31Rp353N0RYNTbh4xH7-TF5lulYAp74lRIgKiAVg8HPev9bgSNS91CThDXTXF0EWc4DD3CG3sgHicDkN0_otx5p8rIn0usrIu2Dw-C7EciX0msJ2y0cDXj5ht-fWCnHjhx_VlQ2dqxoc_CZLU3iKSr1h7MZcBU"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 />
               </div>
               <div className="p-6">
@@ -71,10 +84,13 @@ export default function ProductsPage() {
             {/* Pillow */}
             <div className="bg-surface-light dark:bg-surface-dark rounded-lg border border-gray-200 dark:border-gray-800 shadow-md overflow-hidden hover:-translate-y-1 transition-transform duration-300 group">
               <div className="h-64 bg-gray-100 dark:bg-gray-900 overflow-hidden relative">
-                <img
+                <Image
                   alt="Pillow"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  src="/images/pillow.jpg"
+                  src={pillowImg}
+                  placeholder="blur"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 />
               </div>
               <div className="p-6">
@@ -86,10 +102,12 @@ export default function ProductsPage() {
             {/* Kushan with Cover */}
             <div className="bg-surface-light dark:bg-surface-dark rounded-lg border border-gray-200 dark:border-gray-800 shadow-md overflow-hidden hover:-translate-y-1 transition-transform duration-300 group">
               <div className="h-64 bg-gray-100 dark:bg-gray-900 overflow-hidden relative">
-                <img
+                <Image
                   alt="Kushan with Cover"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuA84uwOlSZpoStfCBkmqQ7ijo3nPNr2LijHkZIWoCyoCb_EGfX1hycE-L7kIaiLsJCDR3fruLtI6lENOykdKHDDryhosd3Mj9_t37diHplo3TQ8TtkAUIlhtHRDND6soFSDwzKGCOx7RtHAb2ASXQYQRQG30hMw3aG8Aq_wwuCwfwmdEhVM4lnSzx0L3gNf-kJQctFRj3M5m5UY9pQUn-GZ02YhBF6-55ZGa1MLG4hF5CzQkHK_kZSILe4lriNxZQjC2whbYMQD7X0"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 />
               </div>
               <div className="p-6">
@@ -101,10 +119,12 @@ export default function ProductsPage() {
             {/* Comforter */}
             <div className="bg-surface-light dark:bg-surface-dark rounded-lg border border-gray-200 dark:border-gray-800 shadow-md overflow-hidden hover:-translate-y-1 transition-transform duration-300 border-t-2 border-t-primary group">
               <div className="h-64 bg-gray-100 dark:bg-gray-900 overflow-hidden relative">
-                <img
+                <Image
                   alt="Comforter"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6dqzwx03S0JYiIrjb0zG7CE70qpnnGhbwFnFFBRevBmQ9qv5WX4OrFpzRMwqRUyZPGOKh7n7T4h9iT93aaO7ReNm9SQi6tChQXbsFp1tKr9vpoZPFEjYxkg7bcv_iQ5JP91-aaVSUX4E1BXLc24NNXSs_MRaS0757c7lys1SRa66J9g9ULuBR6HAyvL4FTsGX6XcT9JmXsqmS1o0mB6LyQh4r_YNGLTl0A9hDEXJ2DkchPghg_UbbAUnlTzKxb-zjhevqzSio6es"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 />
               </div>
               <div className="p-6">
@@ -116,10 +136,12 @@ export default function ProductsPage() {
             {/* Comforter Cover */}
             <div className="bg-surface-light dark:bg-surface-dark rounded-lg border border-gray-200 dark:border-gray-800 shadow-md overflow-hidden hover:-translate-y-1 transition-transform duration-300 group">
               <div className="h-64 bg-gray-100 dark:bg-gray-900 overflow-hidden relative">
-                <img
+                <Image
                   alt="Comforter Cover"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjSAGZVsOdwE2QI-ju5PpZl439Mdw0Hu7JkUkZ0ImvtlB9loHXNdYqCXs9-tYv3IG0BI_see4lDzV4NuAE3PU_XkxFAidYmFbLlZUYkzfd886SJ8hqpREdS47Sxvt74qnm7hmUMsBfKKdHtyslqBpOi6dunmUHWMZmIEtRW5TWNaiEF_x8P1aw5fNpuECjImWvAgBT3PuX8VFqW4W8mDKY3RMGaodWAVdLMLnAYKK5Nlo8MHRli_zVeSD-wWsIhHEYz2SkEq9LMTM"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 />
               </div>
               <div className="p-6">
@@ -131,10 +153,13 @@ export default function ProductsPage() {
             {/* Runner */}
             <div className="bg-surface-light dark:bg-surface-dark rounded-lg border border-gray-200 dark:border-gray-800 shadow-md overflow-hidden hover:-translate-y-1 transition-transform duration-300 group">
               <div className="h-64 bg-gray-100 dark:bg-gray-900 overflow-hidden relative">
-                <img
+                <Image
                   alt="Runner"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  src="/images/runner.jpg"
+                  src={runnerImg}
+                  placeholder="blur"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 />
               </div>
               <div className="p-6">
@@ -155,10 +180,12 @@ export default function ProductsPage() {
             {/* Towel & Napkin Set - Featured Card */}
             <div className="lg:col-span-2 bg-surface-light dark:bg-surface-dark rounded-lg border border-gray-200 dark:border-gray-800 shadow-md overflow-hidden hover:-translate-y-1 transition-transform duration-300 border-t-2 border-t-primary group flex flex-col justify-between">
               <div className="h-80 overflow-hidden relative">
-                <img
+                <Image
                   alt="Towel & Napkin Set"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlX4WSWTbSVWGP5AQQebAampArO46e5oFJv2GolUJL_BUFQzNdVFbQMuV_53vPdU8BBcqlqXK_ZORldxdwW0vjPMUOnDV8Ey26CSUHA0CN06t9GsGXij_VzXQIA0HEUcbUkeHdqctgk4M4x3b07yqUULoOCfrA9a4yeBEsnUYSDDQlvGvevgjRjrsb1PiC-j13DPOzGy61m6-noN22TusVaIPZDeI4wZB3k68f-bYNC3IFmWaVy_drubQQ9tY0bfvkZcGccblMWkw"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 66vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
                   <h3 className="font-display text-2xl font-bold text-white">Towel &amp; Napkin Set</h3>
@@ -174,10 +201,13 @@ export default function ProductsPage() {
             {/* Bathmat */}
             <div className="bg-surface-light dark:bg-surface-dark rounded-lg border border-gray-200 dark:border-gray-800 shadow-md overflow-hidden hover:-translate-y-1 transition-transform duration-300 group flex flex-col">
               <div className="h-80 bg-gray-100 dark:bg-gray-900 overflow-hidden relative">
-                <img
+                <Image
                   alt="Bathmat"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  src="/images/bathmat.png"
+                  src={bathmatImg}
+                  placeholder="blur"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
                 />
               </div>
               <div className="p-6 flex-1 flex flex-col justify-center">
@@ -198,10 +228,12 @@ export default function ProductsPage() {
             {/* Dinner Sets */}
             <div className="bg-surface-light dark:bg-surface-dark rounded-lg border border-gray-200 dark:border-gray-800 shadow-md overflow-hidden hover:-translate-y-1 transition-transform duration-300 group flex flex-col">
               <div className="h-64 bg-gray-100 dark:bg-gray-900 overflow-hidden relative">
-                <img
+                <Image
                   alt="Dinner Sets"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpppMkpC6ip66KOLI89oU9VMNQmF3xm72QhGD_bWzBqaRxHWXBrJsPlnqYLMWSGZAmhG9RznypS6kKT85iIYHQZBXV7s5KDTe5MfGAJP_hgIetMU2Oey_2ya3RqhE0bv2q6n_4apoBB4tqkaMTCwk5ibMwwDW-TI_ouffS3VvZXTPu4LJNiu-5cKcc48F4_HXVEdE-91TjIWq2tlCCgWSd_FmxFpSPwJpyJMDOV1CxXd6k7ThKEfCwHOA6fk0HbFTD3OJPZ5Pp8Kk"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
               </div>
               <div className="p-6 flex-1 flex flex-col justify-center">
@@ -215,10 +247,12 @@ export default function ProductsPage() {
             {/* Tea & Coffee Sets */}
             <div className="bg-surface-light dark:bg-surface-dark rounded-lg border border-gray-200 dark:border-gray-800 shadow-md overflow-hidden hover:-translate-y-1 transition-transform duration-300 group flex flex-col">
               <div className="h-64 bg-gray-100 dark:bg-gray-900 overflow-hidden relative">
-                <img
+                <Image
                   alt="Tea &amp; Coffee Sets"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuDy9WEfjKKSF9Gvdw0Dxfv3aXx_P6u--m0Q8CIIkqKZDk1ikIIBPm5CRQNhfOl09h0tGYo29P0Qon8kI4uiQhDPwMLuKg6M7erbyFLOeNbm89rZ9ZH8HmfkOuD3D3wXv7xOBGLJBEzJ0FLj82KB19oZ8IJsnN9VNxoyAXJok0hRxcUS5QXoTcJenLaBDY5LhZ2qpxrUscZkVMwdC1gch3QGnkrteqiDWwiUwOL-MDUiY-CQlHLnCImRvypC_JiGMKCwjGOYcmu6EJU"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
               </div>
               <div className="p-6 flex-1 flex flex-col justify-center">
@@ -230,10 +264,13 @@ export default function ProductsPage() {
             {/* Bowls */}
             <div className="bg-surface-light dark:bg-surface-dark rounded-lg border border-gray-200 dark:border-gray-800 shadow-md overflow-hidden hover:-translate-y-1 transition-transform duration-300 group flex flex-col">
               <div className="h-64 bg-gray-100 dark:bg-gray-900 overflow-hidden relative">
-                <img
+                <Image
                   alt="Bowls"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  src="/images/bowls.png"
+                  src={bowlsImg}
+                  placeholder="blur"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
               </div>
               <div className="p-6 flex-1 flex flex-col justify-center">
@@ -245,10 +282,13 @@ export default function ProductsPage() {
             {/* Wooden Crockery Set */}
             <div className="bg-surface-light dark:bg-surface-dark rounded-lg border border-gray-200 dark:border-gray-800 shadow-md overflow-hidden hover:-translate-y-1 transition-transform duration-300 group flex flex-col">
               <div className="h-64 bg-gray-100 dark:bg-gray-900 overflow-hidden relative">
-                <img
+                <Image
                   alt="Wooden Crockery Set"
                   className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
-                  src="/images/wooden_crockery.png"
+                  src={woodenCrockeryImg}
+                  placeholder="blur"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
               </div>
               <div className="p-6 flex-1 flex flex-col justify-center">
@@ -260,10 +300,12 @@ export default function ProductsPage() {
             {/* Plates */}
             <div className="bg-surface-light dark:bg-surface-dark rounded-lg border border-gray-200 dark:border-gray-800 shadow-md overflow-hidden hover:-translate-y-1 transition-transform duration-300 group flex flex-col">
               <div className="h-64 bg-gray-100 dark:bg-gray-900 overflow-hidden relative">
-                <img
+                <Image
                   alt="Plates"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9OVQ1cWFRLai34cz2kRXOTI-fXSRM6LSe65hvdpO1IQaxa6-pE8UwSP8GM3IXqkuTLksRujtWxm-IAlYiZdVsuokmY-5cbAkjcOAAk-ei--rjs2V0H9725WpZSd6muchnE1bAbK6v4sQj7SFRu_NNprPTEBXklrgUbIWn9hnR2dmr7DKfrhVbieoguiLWi4fUyaeNsguESzRUBG1RGrmEQrbSSeuni0VfbiLqPcuUDHvMXVbOKZStNNvCN-QlSwq4IpI7GaZxra4"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
               </div>
               <div className="p-6 flex-1 flex flex-col justify-center">
@@ -275,10 +317,12 @@ export default function ProductsPage() {
             {/* Serveware */}
             <div className="bg-surface-light dark:bg-surface-dark rounded-lg border border-gray-200 dark:border-gray-800 shadow-md overflow-hidden hover:-translate-y-1 transition-transform duration-300 group flex flex-col">
               <div className="h-64 bg-gray-100 dark:bg-gray-900 overflow-hidden relative">
-                <img
+                <Image
                   alt="Serveware"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmeGAKlh3EwOVlODB-w3OsAN0AK5oBsp4HFo0O_ZaTO8ZEfN6i6azEIqRm17TkREiS_1ArqykG6f5qpfZ11LJIzSlQhz0SWI-qxOV1jy39UQys0LtLIburSD3UW-VNFq-PN9eER1qIz9sMpUJ5Oh5q1a6r7WLED-WhvF95xqfCUZkWfRlj4nTp6ZEJlTbetE5qjre2VA3tpltLyUZGkCRJXGL4pXfIAyv7cnlbdr01Pn1w5Bw_PlV6BP8QBGh91ISfb5BJdSaB1zs"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
               </div>
               <div className="p-6 flex-1 flex flex-col justify-center">
