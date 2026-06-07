@@ -11,7 +11,7 @@ import sheetsCategoryImg from "@/../public/images/sheets_category.png";
 import protectorCategoryImg from "@/../public/images/protector_category.png";
 import amenitiesCategoryImg from "@/../public/images/amenities_category.png";
 import woodenCrockeryImg from "@/../public/images/wooden_crockery.png";
-import logoImg from "@/../public/images/logo.png";
+import logoImg from "@/../public/images/logo.jpg";
 
 export default function Home() {
   return (
