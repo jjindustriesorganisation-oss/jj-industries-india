@@ -7,6 +7,7 @@ import runnerImg from "@/../public/images/runner.jpg";
 import bathmatImg from "@/../public/images/bathmat.png";
 import bowlsImg from "@/../public/images/bowls.png";
 import woodenCrockeryImg from "@/../public/images/wooden_crockery.png";
+import dustbinImg from "@/../public/images/hotel_dustbin.png";
 
 export default function ProductsPage() {
   return (
@@ -176,23 +177,21 @@ export default function ProductsPage() {
             <h2 className="font-display text-3xl font-bold text-primary-dark dark:text-white">Bath</h2>
             <span className="text-primary font-semibold tracking-wider">02</span>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {/* Towel & Napkin Set - Featured Card */}
-            <div className="lg:col-span-2 bg-surface-light dark:bg-surface-dark rounded-lg border border-gray-200 dark:border-gray-800 shadow-md overflow-hidden hover:-translate-y-1 transition-transform duration-300 border-t-2 border-t-primary group flex flex-col justify-between">
-              <div className="h-80 overflow-hidden relative">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Towel & Napkin Set */}
+            <div className="bg-surface-light dark:bg-surface-dark rounded-lg border border-gray-200 dark:border-gray-800 shadow-md overflow-hidden hover:-translate-y-1 transition-transform duration-300 group flex flex-col">
+              <div className="h-64 bg-gray-100 dark:bg-gray-900 overflow-hidden relative">
                 <Image
                   alt="Towel & Napkin Set"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlX4WSWTbSVWGP5AQQebAampArO46e5oFJv2GolUJL_BUFQzNdVFbQMuV_53vPdU8BBcqlqXK_ZORldxdwW0vjPMUOnDV8Ey26CSUHA0CN06t9GsGXij_VzXQIA0HEUcbUkeHdqctgk4M4x3b07yqUULoOCfrA9a4yeBEsnUYSDDQlvGvevgjRjrsb1PiC-j13DPOzGy61m6-noN22TusVaIPZDeI4wZB3k68f-bYNC3IFmWaVy_drubQQ9tY0bfvkZcGccblMWkw"
                   fill
-                  sizes="(max-width: 768px) 100vw, 66vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
-                  <h3 className="font-display text-2xl font-bold text-white">Towel &amp; Napkin Set</h3>
-                </div>
               </div>
-              <div className="p-6">
-                <p className="text-text-light dark:text-text-dark">
+              <div className="p-6 flex-1 flex flex-col justify-center">
+                <h3 className="font-display text-xl font-bold text-primary-dark dark:text-white mb-2">Towel &amp; Napkin Set</h3>
+                <p className="text-text-light dark:text-text-dark text-sm">
                   Exceptionally absorbent, quick-drying sets designed for the rigors of commercial laundering while maintaining a luxurious hand-feel.
                 </p>
               </div>
@@ -200,19 +199,37 @@ export default function ProductsPage() {
 
             {/* Bathmat */}
             <div className="bg-surface-light dark:bg-surface-dark rounded-lg border border-gray-200 dark:border-gray-800 shadow-md overflow-hidden hover:-translate-y-1 transition-transform duration-300 group flex flex-col">
-              <div className="h-80 bg-gray-100 dark:bg-gray-900 overflow-hidden relative">
+              <div className="h-64 bg-gray-100 dark:bg-gray-900 overflow-hidden relative">
                 <Image
                   alt="Bathmat"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   src={bathmatImg}
                   placeholder="blur"
                   fill
-                  sizes="(max-width: 768px) 100vw, 33vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
               </div>
               <div className="p-6 flex-1 flex flex-col justify-center">
                 <h3 className="font-display text-xl font-bold text-primary-dark dark:text-white mb-2">Bathmat</h3>
                 <p className="text-text-light dark:text-text-dark text-sm">Heavyweight, anti-slip mats ensuring safety and comfort post-bath.</p>
+              </div>
+            </div>
+
+            {/* Premium Hotel Dustbin */}
+            <div className="bg-surface-light dark:bg-surface-dark rounded-lg border border-gray-200 dark:border-gray-800 shadow-md overflow-hidden hover:-translate-y-1 transition-transform duration-300 group flex flex-col">
+              <div className="h-64 bg-gray-100 dark:bg-gray-900 overflow-hidden relative">
+                <Image
+                  alt="Premium Hotel Dustbin"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  src={dustbinImg}
+                  placeholder="blur"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                />
+              </div>
+              <div className="p-6 flex-1 flex flex-col justify-center">
+                <h3 className="font-display text-xl font-bold text-primary-dark dark:text-white mb-2">Premium Hotel Dustbin</h3>
+                <p className="text-text-light dark:text-text-dark text-sm">Polished silver stainless steel bins in a sleek cylindrical shape, designed for luxury suites.</p>
               </div>
             </div>
           </div>
