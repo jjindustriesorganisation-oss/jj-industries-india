@@ -13,38 +13,6 @@ export default function AboutPage() {
 
       {/* Main Content */}
       <main className="flex-grow">
-        {/* Hero Section */}
-        <section className="relative py-20 px-4 sm:px-6 lg:px-8 marble-bg min-h-[500px] flex items-center justify-center text-center overflow-hidden">
-          <Image
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8wP2rNkhG5q9SQ5nHgCtkA3wypN_cCOb8bn3ec3rzFUzZruBgGmMQJi0blR_G-3AABj3Xdp6z3n9vmobMmEyaFZSa7-UEx_1ldG08t51N8-cNJw-y5WqwwxM93YZWa8ktDmvQRb7k2skmyPhtQjCyH3oHZ9a-rj2WYw1PKlpeDm-VxJR7ktHmoXLRI9E14SVRg0GL-x34i0aQBUMvuG8cjPknabFrx4pmKfzPwGaJ9B2FAbs1ZIanrTJR4K96f7CuL00kR8EJB1A"
-            alt="Marble Background"
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover"
-          />
-          <div className="marble-overlay"></div>
-          <div className="relative z-10 max-w-4xl mx-auto space-y-6">
-            <span className="text-primary font-semibold tracking-[0.2em] uppercase block text-sm md:text-base">
-              Your Trust. Our Commitment.
-            </span>
-            <h1 className="font-display text-4xl md:text-6xl font-bold text-primary-dark dark:text-white leading-tight animate-fade-in">
-              Complete Hotel Supply Solutions
-            </h1>
-            <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
-              Establishing a bridge between local manufacturing excellence and global hospitality standards since our inception.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-              <Link href="/products" className="bg-primary text-white px-8 py-3 rounded font-medium hover:bg-opacity-90 transition shadow-lg text-lg flex items-center justify-center gap-2">
-                <span className="material-icons">explore</span>
-                View Catalog
-              </Link>
-              <Link href="/#contact" className="bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-white dark:hover:text-white px-8 py-3 rounded font-medium transition shadow-lg text-lg flex items-center justify-center gap-2">
-                Contact Sales
-              </Link>
-            </div>
-          </div>
-        </section>
 
         {/* Leadership Section */}
         <section className="py-20 px-4 sm:px-6 lg:px-8 bg-surface-light dark:bg-surface-dark">

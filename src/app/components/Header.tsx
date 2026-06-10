@@ -33,7 +33,7 @@ export default function Header() {
     <>
       <header className="bg-surface-light dark:bg-surface-dark shadow-md sticky top-0 z-50 transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center py-4">
+          <div className="flex justify-between md:grid md:grid-cols-3 items-center py-4">
             <div className="flex items-center space-x-2">
               <Link href="/" className="flex items-center space-x-2 group">
                 <Image
@@ -51,7 +51,7 @@ export default function Header() {
             </div>
 
             {/* Desktop Navigation */}
-            <nav className="hidden md:flex space-x-8">
+            <nav className="hidden md:flex space-x-8 justify-self-center">
               {navLinks.map((link) => {
                 const active = isActive(link.href);
                 return (
@@ -70,14 +70,7 @@ export default function Header() {
               })}
             </nav>
 
-            <div className="hidden md:block">
-              <Link
-                href={pathname === "/" ? "#contact" : "/#contact"}
-                className="bg-primary text-white px-5 py-2 rounded font-medium hover:bg-opacity-90 transition shadow-md hover:shadow-lg inline-block"
-              >
-                Get a Quote
-              </Link>
-            </div>
+            <div className="hidden md:block"></div>
 
             {/* Hamburger Button */}
             <div className="md:hidden flex items-center">
